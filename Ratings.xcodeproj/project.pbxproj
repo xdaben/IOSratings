@@ -110,7 +110,6 @@
 		81C1766E17138CF900B360D5 = {
 			isa = PBXGroup;
 			children = (
-				81C1769D1713937000B360D5 /* Images */,
 				81C1768017138CF900B360D5 /* Ratings */,
 				81C1767917138CF900B360D5 /* Frameworks */,
 				81C1767817138CF900B360D5 /* Products */,
@@ -155,6 +154,7 @@
 		81C1768117138CF900B360D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				81C1769D1713937000B360D5 /* Images */,
 				81C1768217138CF900B360D5 /* Ratings-Info.plist */,
 				81C1768317138CF900B360D5 /* InfoPlist.strings */,
 				81C1768617138CF900B360D5 /* main.m */,
@@ -194,7 +194,8 @@
 				81C176B41713937000B360D5 /* Players.png */,
 				81C176B51713937000B360D5 /* Players@2x.png */,
 			);
-			path = Images;
+			name = Images;
+			path = ../Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +415,7 @@
 				81C1769C17138CF900B360D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
