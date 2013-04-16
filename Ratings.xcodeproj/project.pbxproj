@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81B9D6BB171637B0001D6126 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B9D6BA171637B0001D6126 /* PlayerCell.m */; };
+		81BE2DC0171CCCB700922F26 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BE2DBF171CCCB700922F26 /* PlayerDetailsViewController.m */; };
 		81C1767B17138CF900B360D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C1767A17138CF900B360D5 /* UIKit.framework */; };
 		81C1767D17138CF900B360D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C1767C17138CF900B360D5 /* Foundation.framework */; };
 		81C1767F17138CF900B360D5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C1767E17138CF900B360D5 /* CoreGraphics.framework */; };
@@ -47,6 +49,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81B9D6B9171637B0001D6126 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		81B9D6BA171637B0001D6126 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		81BE2DBE171CCCB700922F26 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		81BE2DBF171CCCB700922F26 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		81C1767717138CF900B360D5 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C1767A17138CF900B360D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81C1767C17138CF900B360D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +116,7 @@
 		81C1766E17138CF900B360D5 = {
 			isa = PBXGroup;
 			children = (
+				81C1769D1713937000B360D5 /* Images */,
 				81C1768017138CF900B360D5 /* Ratings */,
 				81C1767917138CF900B360D5 /* Frameworks */,
 				81C1767817138CF900B360D5 /* Products */,
@@ -140,12 +147,16 @@
 				81C1768917138CF900B360D5 /* AppDelegate.h */,
 				81C1768A17138CF900B360D5 /* AppDelegate.m */,
 				81C1769217138CF900B360D5 /* MainStoryboard.storyboard */,
+				81B9D6B9171637B0001D6126 /* PlayerCell.h */,
+				81B9D6BA171637B0001D6126 /* PlayerCell.m */,
 				81C176D11713981D00B360D5 /* Player.h */,
 				81C176D21713981D00B360D5 /* Player.m */,
 				81C176CE1713978200B360D5 /* PlayersViewController.h */,
 				81C176CF1713978200B360D5 /* PlayersViewController.m */,
 				81C1769517138CF900B360D5 /* ViewController.h */,
 				81C1769617138CF900B360D5 /* ViewController.m */,
+				81BE2DBE171CCCB700922F26 /* PlayerDetailsViewController.h */,
+				81BE2DBF171CCCB700922F26 /* PlayerDetailsViewController.m */,
 				81C1768117138CF900B360D5 /* Supporting Files */,
 			);
 			path = Ratings;
@@ -154,7 +165,6 @@
 		81C1768117138CF900B360D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				81C1769D1713937000B360D5 /* Images */,
 				81C1768217138CF900B360D5 /* Ratings-Info.plist */,
 				81C1768317138CF900B360D5 /* InfoPlist.strings */,
 				81C1768617138CF900B360D5 /* main.m */,
@@ -194,8 +204,7 @@
 				81C176B41713937000B360D5 /* Players.png */,
 				81C176B51713937000B360D5 /* Players@2x.png */,
 			);
-			name = Images;
-			path = ../Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +302,8 @@
 				81C1769717138CF900B360D5 /* ViewController.m in Sources */,
 				81C176D01713978200B360D5 /* PlayersViewController.m in Sources */,
 				81C176D31713981D00B360D5 /* Player.m in Sources */,
+				81B9D6BB171637B0001D6126 /* PlayerCell.m in Sources */,
+				81BE2DC0171CCCB700922F26 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
