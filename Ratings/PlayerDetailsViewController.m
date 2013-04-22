@@ -14,6 +14,9 @@
 @end
 
 @implementation PlayerDetailsViewController
+{
+    NSString *game;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,12 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.detailLabel.text = game;
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,11 +59,38 @@
 {
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
-    player.game = @"Chess";
+    player.game = game;
     player.rating = 1;
     [self.delegate playerDetailsViewController:self didAddPlayer:player];
     
     //[self.delegate playerDetailsViewControllerDidSave:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"PickGame"])
+    {
+        GamePickerViewController *gamePickerViewController = segue.destinationViewController;
+        gamePickerViewController.delegate = self;
+        gamePickerViewController.game = game;
+    }
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        NSLog(@"init playerdetailsviewcontroller");
+        game = @"chess";
+    }
+    return self;
+}
+
+-(void)gamePickerViewController: (GamePickerViewController *)controller didSelectGame:(NSString *)theGame
+{
+    game = theGame;
+    self.detailLabel.text = game;
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 

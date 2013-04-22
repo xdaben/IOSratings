@@ -46,6 +46,7 @@
 		81C176CD1713937000B360D5 /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81C176B51713937000B360D5 /* Players@2x.png */; };
 		81C176D01713978200B360D5 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C176CF1713978200B360D5 /* PlayersViewController.m */; };
 		81C176D31713981D00B360D5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C176D21713981D00B360D5 /* Player.m */; };
+		81D33CB7171F6E9400B4634E /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D33CB6171F6E9400B4634E /* GamePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,8 @@
 		81C176CF1713978200B360D5 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
 		81C176D11713981D00B360D5 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		81C176D21713981D00B360D5 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		81D33CB5171F6E9400B4634E /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
+		81D33CB6171F6E9400B4634E /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				81C1769617138CF900B360D5 /* ViewController.m */,
 				81BE2DBE171CCCB700922F26 /* PlayerDetailsViewController.h */,
 				81BE2DBF171CCCB700922F26 /* PlayerDetailsViewController.m */,
+				81D33CB5171F6E9400B4634E /* GamePickerViewController.h */,
+				81D33CB6171F6E9400B4634E /* GamePickerViewController.m */,
 				81C1768117138CF900B360D5 /* Supporting Files */,
 			);
 			path = Ratings;
@@ -304,6 +309,7 @@
 				81C176D31713981D00B360D5 /* Player.m in Sources */,
 				81B9D6BB171637B0001D6126 /* PlayerCell.m in Sources */,
 				81BE2DC0171CCCB700922F26 /* PlayerDetailsViewController.m in Sources */,
+				81D33CB7171F6E9400B4634E /* GamePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
