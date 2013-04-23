@@ -60,7 +60,7 @@
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
     player.game = game;
-    player.rating = 1;
+    player.rating = 3;
     [self.delegate playerDetailsViewController:self didAddPlayer:player];
     
     //[self.delegate playerDetailsViewControllerDidSave:self];
