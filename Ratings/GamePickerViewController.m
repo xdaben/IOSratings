@@ -128,7 +128,7 @@ games = [NSArray arrayWithObjects:
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     selectedIndex = indexPath.row;
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+   // UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *theGame = [games objectAtIndex:indexPath.row];
     [self.delegate gamePickerViewController:self didSelectGame:theGame];
 }
