@@ -60,11 +60,13 @@
 {
 	switch (rating)
 	{
+        //case -1: return [UIImage imageNamed:@"Apple logo icon - Aluminum.png"];
 		case 1: return [UIImage imageNamed:@"1StarSmall.png"];
 		case 2: return [UIImage imageNamed:@"2StarsSmall.png"];
 		case 3: return [UIImage imageNamed:@"3StarsSmall.png"];
 		case 4: return [UIImage imageNamed:@"4StarsSmall.png"];
 		case 5: return [UIImage imageNamed:@"5StarsSmall.png"];
+        default:return [UIImage imageNamed:@"1Star BAD.png"];
 	}
 	return nil;
 }

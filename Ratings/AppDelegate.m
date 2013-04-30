@@ -35,6 +35,11 @@
     player.game = @"Texas Hold'em Poker";
     player.rating = 2;
     [players addObject:player];
+    player = [[Player alloc]init];
+    player.name = @"Unknown Rating";
+    player.game = @"Chess";
+    player.rating = -1;
+    [players addObject:player];
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     UINavigationController *navigationBarController = [[tabBarController viewControllers] objectAtIndex:0];
     PlayersViewController *playersViewController = [[navigationBarController viewControllers] objectAtIndex:0];

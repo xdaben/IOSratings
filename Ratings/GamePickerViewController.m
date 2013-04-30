@@ -36,7 +36,8 @@ games = [NSArray arrayWithObjects:
          @"Russian Roulette",
          @"Spin the Bottle",
          @"Texas Hold'em Poker",
-         @"Tic-Tac",
+         @"Tic-Tac-Toe",
+         @"Figure out Objective-C code",
          nil];
     selectedIndex = [games indexOfObject:self.game];
     

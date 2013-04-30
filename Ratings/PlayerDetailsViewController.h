@@ -20,6 +20,7 @@
 @property (nonatomic,weak) id <PlayerDetailsViewControllerDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UILabel *detailLabel;
+@property (strong, nonatomic) IBOutlet UITextField *rateTextField;
 
 
 - (IBAction)cancel:(id)sender;

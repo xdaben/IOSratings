@@ -48,6 +48,10 @@
     if (indexPath.section == 0) {
         [self.nameTextField becomeFirstResponder];
     }
+    if (indexPath.section == 2) {
+        [self.rateTextField becomeFirstResponder];
+    }
+    
 
 }
 
@@ -59,8 +63,10 @@
 {
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
+    player.rating = self.rateTextField.text.intValue;
+   // NSLog(self.rateTextField.text);
     player.game = game;
-    player.rating = 3;
+    //player.rating = 3;
     [self.delegate playerDetailsViewController:self didAddPlayer:player];
     
     //[self.delegate playerDetailsViewControllerDidSave:self];

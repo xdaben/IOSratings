@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		819D7F421728B0B300F704D9 /* 1Star BAD.png in Resources */ = {isa = PBXBuildFile; fileRef = 819D7F411728B0B300F704D9 /* 1Star BAD.png */; };
+		819D7F441728B28200F704D9 /* 1StarSmallbad.png in Resources */ = {isa = PBXBuildFile; fileRef = 819D7F431728B28200F704D9 /* 1StarSmallbad.png */; };
+		819D7F461728B50500F704D9 /* Apple logo icon - Aluminum.png in Resources */ = {isa = PBXBuildFile; fileRef = 819D7F451728B50500F704D9 /* Apple logo icon - Aluminum.png */; };
 		81B9D6BB171637B0001D6126 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B9D6BA171637B0001D6126 /* PlayerCell.m */; };
 		81BE2DC0171CCCB700922F26 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BE2DBF171CCCB700922F26 /* PlayerDetailsViewController.m */; };
 		81C1767B17138CF900B360D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C1767A17138CF900B360D5 /* UIKit.framework */; };
@@ -50,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		819D7F411728B0B300F704D9 /* 1Star BAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1Star BAD.png"; sourceTree = "<group>"; };
+		819D7F431728B28200F704D9 /* 1StarSmallbad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarSmallbad.png; sourceTree = "<group>"; };
+		819D7F451728B50500F704D9 /* Apple logo icon - Aluminum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple logo icon - Aluminum.png"; sourceTree = "<group>"; };
 		81B9D6B9171637B0001D6126 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		81B9D6BA171637B0001D6126 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		81BE2DBE171CCCB700922F26 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
@@ -184,6 +190,9 @@
 		81C1769D1713937000B360D5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				819D7F451728B50500F704D9 /* Apple logo icon - Aluminum.png */,
+				819D7F431728B28200F704D9 /* 1StarSmallbad.png */,
+				819D7F411728B0B300F704D9 /* 1Star BAD.png */,
 				81C1769E1713937000B360D5 /* 1Star.png */,
 				81C1769F1713937000B360D5 /* 1Star@2x.png */,
 				81C176A01713937000B360D5 /* 1StarSmall.png */,
@@ -292,6 +301,9 @@
 				81C176CB1713937000B360D5 /* Gestures@2x.png in Resources */,
 				81C176CC1713937000B360D5 /* Players.png in Resources */,
 				81C176CD1713937000B360D5 /* Players@2x.png in Resources */,
+				819D7F421728B0B300F704D9 /* 1Star BAD.png in Resources */,
+				819D7F441728B28200F704D9 /* 1StarSmallbad.png in Resources */,
+				819D7F461728B50500F704D9 /* Apple logo icon - Aluminum.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +409,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ratings/Ratings-Prefix.pch";
 				INFOPLIST_FILE = "Ratings/Ratings-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,7 +422,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ratings/Ratings-Prefix.pch";
 				INFOPLIST_FILE = "Ratings/Ratings-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
