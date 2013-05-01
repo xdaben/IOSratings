@@ -50,6 +50,8 @@
 		81C176D01713978200B360D5 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C176CF1713978200B360D5 /* PlayersViewController.m */; };
 		81C176D31713981D00B360D5 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C176D21713981D00B360D5 /* Player.m */; };
 		81D33CB7171F6E9400B4634E /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D33CB6171F6E9400B4634E /* GamePickerViewController.m */; };
+		81DC8D7D172F4A0E00A35FA7 /* 4StarsSmall copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 81DC8D7C172F4A0E00A35FA7 /* 4StarsSmall copy.png */; };
+		81DC8D7F172F4A5400A35FA7 /* 5StarsSmall copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 81DC8D7E172F4A5300A35FA7 /* 5StarsSmall copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +108,8 @@
 		81C176D21713981D00B360D5 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		81D33CB5171F6E9400B4634E /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
 		81D33CB6171F6E9400B4634E /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
+		81DC8D7C172F4A0E00A35FA7 /* 4StarsSmall copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4StarsSmall copy.png"; sourceTree = "<group>"; };
+		81DC8D7E172F4A5300A35FA7 /* 5StarsSmall copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5StarsSmall copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 		81C1769D1713937000B360D5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				81DC8D7E172F4A5300A35FA7 /* 5StarsSmall copy.png */,
+				81DC8D7C172F4A0E00A35FA7 /* 4StarsSmall copy.png */,
 				819D7F451728B50500F704D9 /* Apple logo icon - Aluminum.png */,
 				819D7F431728B28200F704D9 /* 1StarSmallbad.png */,
 				819D7F411728B0B300F704D9 /* 1Star BAD.png */,
@@ -304,6 +310,8 @@
 				819D7F421728B0B300F704D9 /* 1Star BAD.png in Resources */,
 				819D7F441728B28200F704D9 /* 1StarSmallbad.png in Resources */,
 				819D7F461728B50500F704D9 /* Apple logo icon - Aluminum.png in Resources */,
+				81DC8D7D172F4A0E00A35FA7 /* 4StarsSmall copy.png in Resources */,
+				81DC8D7F172F4A5400A35FA7 /* 5StarsSmall copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
