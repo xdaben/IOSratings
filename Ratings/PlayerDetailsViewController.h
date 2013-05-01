@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UILabel *detailLabel;
 @property (strong, nonatomic) IBOutlet UITextField *rateTextField;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedRate;
 
 
 - (IBAction)cancel:(id)sender;

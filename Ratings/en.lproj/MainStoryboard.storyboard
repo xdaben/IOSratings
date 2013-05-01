@@ -56,7 +56,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" id="ywZ-cg-nC8">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" id="ywZ-cg-nC8">
                                                     <rect key="frame" x="0.0" y="7" width="300" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -100,6 +100,42 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Rating" id="6Bh-DS-g4T">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="30" id="JJD-de-KgZ">
+                                        <rect key="frame" x="0.0" y="204" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="29"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="plain" id="dZk-cm-Nif">
+                                                    <rect key="frame" x="0.0" y="-7" width="300" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <segments>
+                                                        <segment title="" image="1StarSmall@2x.png">
+                                                            <size key="contentOffset" width="-65" height="0.0"/>
+                                                        </segment>
+                                                        <segment title="" image="1StarSmall@2x.png">
+                                                            <size key="contentOffset" width="-64" height="0.0"/>
+                                                        </segment>
+                                                        <segment title="" image="1StarSmall@2x.png">
+                                                            <size key="contentOffset" width="-65" height="0.0"/>
+                                                        </segment>
+                                                        <segment title="" image="1StarSmall@2x.png">
+                                                            <size key="contentOffset" width="-64" height="0.0"/>
+                                                        </segment>
+                                                        <segment title="" image="1StarSmall@2x.png">
+                                                            <size key="contentOffset" width="-68" height="0.0"/>
+                                                        </segment>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="nA7-14-RGH" id="Jjv-Gd-mZE"/>
@@ -120,7 +156,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="detailLabel" destination="VPJ-gR-byQ" id="5cA-6R-368"/>
-                        <outlet property="nameTextField" destination="ywZ-cg-nC8" id="0cx-kO-zkf"/>
+                        <outlet property="nameTextField" destination="ywZ-cg-nC8" id="ZZZ-NZ-noo"/>
+                        <outlet property="segmentedRate" destination="dZk-cm-Nif" id="Glk-1M-70D"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rb-3V-PEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -231,7 +268,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Players" id="63T-a1-gAL">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="a79-o3-rCe">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="a79-o3-rCe">
+                            <color key="tintColor" red="1" green="0.098004718142823077" blue="0.13338242931013955" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="uvc-31-IhQ" kind="modal" identifier="AddPlayer" modalTransitionStyle="flipHorizontal" id="jk4-FM-epx"/>
                             </connections>
@@ -282,6 +320,7 @@
     </scenes>
     <resources>
         <image name="1StarSmall.png" width="81" height="15"/>
+        <image name="1StarSmall@2x.png" width="162" height="30"/>
         <image name="Gestures.png" width="30" height="30"/>
         <image name="Players.png" width="30" height="30"/>
     </resources>
@@ -304,6 +343,8 @@
                 <relationship kind="action" name="done:"/>
                 <relationship kind="outlet" name="detailLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="rateTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="segmentedRate" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="PlayersViewController" superclassName="UITableViewController">

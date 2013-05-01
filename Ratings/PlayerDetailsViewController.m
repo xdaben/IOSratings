@@ -48,9 +48,9 @@
     if (indexPath.section == 0) {
         [self.nameTextField becomeFirstResponder];
     }
-    if (indexPath.section == 2) {
-        [self.rateTextField becomeFirstResponder];
-    }
+//    if (indexPath.section == 2) {
+//        [self.rateTextField becomeFirstResponder];
+//    }
     
 
 }
@@ -63,7 +63,7 @@
 {
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
-    player.rating = self.rateTextField.text.intValue;
+    player.rating = self.segmentedRate.selectedSegmentIndex+1;
    // NSLog(self.rateTextField.text);
     player.game = game;
     //player.rating = 3;
