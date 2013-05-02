@@ -42,7 +42,7 @@
         <scene sceneID="Mrt-X6-sHP">
             <objects>
                 <tableViewController id="nA7-14-RGH" customClass="PlayerDetailsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bqF-vC-0NR">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="bqF-vC-0NR">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -102,34 +102,36 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Rating" id="6Bh-DS-g4T">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="30" id="JJD-de-KgZ">
-                                        <rect key="frame" x="0.0" y="204" width="320" height="32"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="slider" id="wUQ-84-KaV">
+                                        <rect key="frame" x="0.0" y="204" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="29"/>
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="plain" id="dZk-cm-Nif">
-                                                    <rect key="frame" x="0.0" y="-7" width="300" height="44"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="1StarSmall.png" id="nh6-Ra-FaB">
+                                                    <rect key="frame" x="69" y="6" width="150" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <segments>
-                                                        <segment title="" image="1StarSmall@2x.png">
-                                                            <size key="contentOffset" width="-65" height="0.0"/>
-                                                        </segment>
-                                                        <segment title="" image="1StarSmall@2x.png">
-                                                            <size key="contentOffset" width="-64" height="0.0"/>
-                                                        </segment>
-                                                        <segment title="" image="1StarSmall@2x.png">
-                                                            <size key="contentOffset" width="-65" height="0.0"/>
-                                                        </segment>
-                                                        <segment title="" image="1StarSmall@2x.png">
-                                                            <size key="contentOffset" width="-64" height="0.0"/>
-                                                        </segment>
-                                                        <segment title="" image="1StarSmall@2x.png">
-                                                            <size key="contentOffset" width="-68" height="0.0"/>
-                                                        </segment>
-                                                    </segments>
-                                                </segmentedControl>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="sliderimage" id="E1j-ul-D8D">
+                                        <rect key="frame" x="0.0" y="249" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" id="aPK-fW-koP">
+                                                    <rect key="frame" x="4" y="11" width="293" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="sliderUpTouch:" destination="nA7-14-RGH" eventType="touchUpInside" id="6fs-eD-Yr0"/>
+                                                        <action selector="sliderchanged:" destination="nA7-14-RGH" eventType="valueChanged" id="eVX-Eo-JSa"/>
+                                                    </connections>
+                                                </slider>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -156,8 +158,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="detailLabel" destination="VPJ-gR-byQ" id="5cA-6R-368"/>
+                        <outlet property="myImage" destination="nh6-Ra-FaB" id="P9b-m5-7xF"/>
+                        <outlet property="mySlider" destination="aPK-fW-koP" id="2dw-2g-0AK"/>
                         <outlet property="nameTextField" destination="ywZ-cg-nC8" id="ZZZ-NZ-noo"/>
-                        <outlet property="segmentedRate" destination="dZk-cm-Nif" id="Glk-1M-70D"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Rb-3V-PEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -320,7 +323,6 @@
     </scenes>
     <resources>
         <image name="1StarSmall.png" width="81" height="15"/>
-        <image name="1StarSmall@2x.png" width="162" height="30"/>
         <image name="Gestures.png" width="30" height="30"/>
         <image name="Players.png" width="30" height="30"/>
     </resources>
@@ -341,7 +343,11 @@
             <relationships>
                 <relationship kind="action" name="cancel:"/>
                 <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="sliderUpTouch:"/>
+                <relationship kind="action" name="sliderchanged:"/>
                 <relationship kind="outlet" name="detailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mySlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="rateTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="segmentedRate" candidateClass="UISegmentedControl"/>

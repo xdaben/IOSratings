@@ -63,7 +63,7 @@
 {
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
-    player.rating = self.segmentedRate.selectedSegmentIndex+1;
+    player.rating = round(self.mySlider.value);
    // NSLog(self.rateTextField.text);
     player.game = game;
     //player.rating = 3;
@@ -97,7 +97,38 @@
     self.detailLabel.text = game;
     [self.navigationController popViewControllerAnimated:YES];
     
+    
+}
+
+-(IBAction)sliderchanged:(id)sender
+{
+    
+    
+    if (round(self.mySlider.value) == 1)
+    {
+        self.myImage.image = [UIImage imageNamed:@"1StarSmall.png"];
+    }
+    else if (round(self.mySlider.value) == 2)
+    {
+        self.myImage.image = [UIImage imageNamed:@"2StarsSmall.png"];
+    }
+else if (round(self.mySlider.value) == 3)
+{
+    self.myImage.image = [UIImage imageNamed:@"3StarsSmall.png"];
+}
+else if (round(self.mySlider.value) == 4)
+{
+    self.myImage.image = [UIImage imageNamed:@"4StarsSmall.png"];
+}
+else if (round(self.mySlider.value) == 5)
+{
+    self.myImage.image = [UIImage imageNamed:@"5StarsSmall.png"];
+}
 }
 
 
+- (IBAction)sliderUpTouch:(id)sender {
+    int value = round(self.mySlider.value);
+    [self.mySlider setValue: value animated:YES];
+}
 @end
